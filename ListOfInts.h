@@ -5,12 +5,15 @@ using namespace std;
 
 class ListOfInts {
 	friend class NodeofInt;
+
 private:
-	NodeofInt* head;
+	nodePtr head;
+
 public:
 	ListOfInts();
-	void insertBack(int);
+	void insertBack(int a);
 	void displayList();
 	int deleteMostRecent();
 	~ListOfInts();
-}; 
+};
+
